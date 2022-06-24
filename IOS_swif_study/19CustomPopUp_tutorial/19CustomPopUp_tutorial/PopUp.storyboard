@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Custom Pop Up View Controllor-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="AlertPopUpVC" id="Y6W-OH-hqX" customClass="CustomPopUpViewControllor" customModule="_9CustomPopUp_tutorial" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LeZ-8U-TaX" userLabel="bgbtn">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button">
+                                    <color key="baseForegroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="onBgBtnClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="gb6-so-Z8V"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YZJ-go-InU" userLabel="contentView">
+                                <rect key="frame" x="82" y="261" width="250" height="400"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="my_image" highlighted="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3VC-lw-9HV">
+                                        <rect key="frame" x="65" y="20" width="120" height="120"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="BnO-Vd-g8i"/>
+                                            <constraint firstAttribute="width" constant="120" id="sye-6v-zXy"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="안녕하세요 성정현입니다~" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7IM-Fl-dBf">
+                                        <rect key="frame" x="37" y="148" width="176.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="구독과 좋아요 부탁드립니다!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0uM-xq-L7S">
+                                        <rect key="frame" x="30" y="176.5" width="190.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="iZp-u4-GUT">
+                                        <rect key="frame" x="65" y="313" width="120" height="72"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GFB-zH-6hw">
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="31"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="Qac-ol-jxc"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="오픈카톡방 가기">
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="onOpenChatBtnClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="x4A-fc-CJx"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WR9-Mm-fn3">
+                                                <rect key="frame" x="0.0" y="41" width="120" height="31"/>
+                                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="wuW-A4-zwu"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="구독하러가기">
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="onSubscribeBtbClicked:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="kv5-N7-i9n"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="7IM-Fl-dBf" firstAttribute="top" secondItem="3VC-lw-9HV" secondAttribute="bottom" constant="8" id="6ec-sb-GiW"/>
+                                    <constraint firstItem="0uM-xq-L7S" firstAttribute="top" secondItem="7IM-Fl-dBf" secondAttribute="bottom" constant="8" id="HIz-9v-LSP"/>
+                                    <constraint firstAttribute="bottom" secondItem="iZp-u4-GUT" secondAttribute="bottom" constant="15" id="K0T-Ma-YeM"/>
+                                    <constraint firstItem="0uM-xq-L7S" firstAttribute="centerX" secondItem="YZJ-go-InU" secondAttribute="centerX" id="RPX-VY-1MJ"/>
+                                    <constraint firstItem="iZp-u4-GUT" firstAttribute="centerX" secondItem="YZJ-go-InU" secondAttribute="centerX" id="Spe-bu-Bc7"/>
+                                    <constraint firstAttribute="height" constant="400" id="XAN-iS-bGl"/>
+                                    <constraint firstItem="3VC-lw-9HV" firstAttribute="centerX" secondItem="YZJ-go-InU" secondAttribute="centerX" id="cUd-Bd-14M"/>
+                                    <constraint firstItem="3VC-lw-9HV" firstAttribute="top" secondItem="YZJ-go-InU" secondAttribute="top" constant="20" id="dEK-C0-Bv9"/>
+                                    <constraint firstItem="7IM-Fl-dBf" firstAttribute="centerX" secondItem="YZJ-go-InU" secondAttribute="centerX" id="eAb-L8-ayH"/>
+                                    <constraint firstAttribute="width" constant="250" id="kjy-KB-R3n"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.59914434523809523" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LeZ-8U-TaX" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="Crt-Kz-Psk"/>
+                            <constraint firstItem="YZJ-go-InU" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="217" id="DRw-Mu-qSP"/>
+                            <constraint firstItem="LeZ-8U-TaX" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Ng9-wg-sWd"/>
+                            <constraint firstItem="LeZ-8U-TaX" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="U3q-N9-jY4"/>
+                            <constraint firstItem="YZJ-go-InU" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="UWc-N9-Gpd"/>
+                            <constraint firstItem="YZJ-go-InU" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="bXr-7T-bXf"/>
+                            <constraint firstAttribute="bottom" secondItem="LeZ-8U-TaX" secondAttribute="bottom" id="yK3-y1-ob9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bgBtn" destination="LeZ-8U-TaX" id="Nl7-EX-DW9"/>
+                        <outlet property="contentView" destination="YZJ-go-InU" id="RYa-2h-SsW"/>
+                        <outlet property="openChatBtn" destination="GFB-zH-6hw" id="GiV-cN-x0Y"/>
+                        <outlet property="subscribeBtn" destination="WR9-Mm-fn3" id="aYz-v9-13h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-17.39130434782609" y="93.75"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="my_image" width="256" height="256"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
