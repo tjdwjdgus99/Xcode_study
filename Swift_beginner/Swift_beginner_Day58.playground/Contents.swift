@@ -10,7 +10,7 @@ let favoritePetsSet = Set(favoritePets)
 let friendsPetSet = Set(friendsPets)
 
 let isFavoritePetsSet = favoritePets.isSubset(of: myPetsSet)
-let isFriendsPetsInMyPets = favoritePets.isSubset(of: friendsPetsSet)
+let isFriendsPetsInMyPets = favoritePets.isSubset(of: friendsPetSet)
 
 print("isFavoritePetsSet : \(isFavoritePetsSet)")
 
